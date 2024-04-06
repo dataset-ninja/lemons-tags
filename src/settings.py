@@ -46,7 +46,11 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/lemons-tags"
 DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "https://github.com/dataset-ninja/lemons-tags"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]] or Literal["predefined"]] = "predefined"
+CLASS2COLOR: Optional[Dict[str, List[str]] or Literal["predefined"]] = {
+    "lemon": [255, 0, 0],
+    "kiwi": [0, 255, 0],
+    "cucumber": [0, 255, 255],
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
@@ -63,7 +67,17 @@ ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "test tags"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "test tags"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
+    "alternative": [
+        "alternative split 1",
+        "alternative split 2",
+    ],
+    "my split": [
+        "my split 1",
+        "my split 2",
+    ],
+    "__POSTTEXT__": "Additionally, tra - ta - ta",
+}
 TAGS: Optional[
     List[
         Literal[
