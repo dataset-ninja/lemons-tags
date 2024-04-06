@@ -60,11 +60,11 @@ BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
 CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = "test tags"
-AUTHORS_CONTACTS: Optional[List[str]] = "test tags"
+AUTHORS: Optional[List[str]] = ["test", "tester"]
+AUTHORS_CONTACTS: Optional[List[str]] = "test_tags@gmail.com"
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "test tags"
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = "test tags"
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = "test_tags@gmail.com"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
